@@ -1,0 +1,25 @@
+{
+  "name": "pm2-auto-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "cli": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "pm2 start app.js",
+    "restart": "pm2 restart app",
+    "stop": "pm2 stop app",
+    "delete": "pm2 delete app",
+    "reload": "pm2 reload app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "express": "^4.17.1",
+    "pm2": "^4.5.5",
+    "shelljs": "^0.8.3"
+  }
+}
